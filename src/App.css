@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+.App{
+    background-color: black;
+    z-index: 1;
+    min-height: 100vh;
+    width: 100%;
+    color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search_weather_form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0% 30% 2% 30%;
+    padding: 15px;
+    font-family: 'Amatic SC', cursive;
+    width: auto;
+    font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+    font-size: 3.6vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input_City{
+    display: block;
+    border: solid white 2px ;
+    box-shadow: 2px 3px rgba(255,255,255,0.4);
+    padding: 1.2%;
+    padding-left: 4%;
+    border-radius: 20px;
+    margin: 0 0;
+    width: 100%;
+    color: white;
+    background: none;
+    font-family: 'Amatic SC', cursive;
+    outline: none;
+    font-size: 3vh;
 }
 
-.App-link {
-  color: #61dafb;
+.weather_information_block{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 5% 20% 2% 15% 31% 5% 2% 15% 5%;
+    background-size: cover !important;
+    background-position: 0% 40% !important;
+    z-index: 2;
+    width: 100%;
+    margin: 20px 0%;
+    padding: 4% 0;
+    text-align: center;
+    font-family: 'Noto Serif SC', serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0;
 }
+
+.city_title{
+    font-weight: 300 ;
+    font-size: 3.5vh;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.city_date{
+    font-weight: 900;
+    font-size: 2.5vh;
+    grid-row: 1;
+    grid-column: 4;
+}
+
+.city_temp{
+    font-size: 3.5vh;
+    grid-row: 1;
+    grid-column: 6;
+}
+
+.city_state{
+    font-size: 2.5vh;
+    grid-row: 1;
+    grid-column: 8;
+}
+
+@media screen and (max-width: 800px){
+    .input_City{
+        font-size: 2vh;
+    }
+
+    h1{
+        font-size: 2.5vh;
+    } 
+
+    .city_title{
+        font-weight: 300 ;
+        font-size: 1.7vh;
+    }
+    
+    .city_date{
+        font-weight: 900;
+        font-size: 1.2vh;
+    }
+    
+    .city_temp{
+        font-size: 1.7vh;
+    }
+    
+    .city_state{
+        font-size: 1.2vh;
+    }
+}
+
